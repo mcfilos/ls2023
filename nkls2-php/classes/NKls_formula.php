@@ -168,7 +168,7 @@ class NKls_formula{
 				$successes = 0;
 				$acv = array_count_values($alreadystrings);
 				foreach($consts as $const){
-					echo "\n".'pass for '.$var.' - '. $const.' with '.$obj->string().' '.json_encode($alreadystrings)."\n";
+					//echo "\n".'pass for '.$var.' - '. $const.' with '.$obj->string().' '.json_encode($alreadystrings)."\n";
 					$propobj = $obj->clone_replaced([$var => $const]);
 					//var_dump('CCC',$propobj);
 					if(!$propobj){
